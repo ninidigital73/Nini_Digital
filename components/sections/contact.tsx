@@ -87,7 +87,7 @@ export function ContactSection() {
 
     // Try POSTing to server API
     try {
-      const fetchUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}`
+      const fetchUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}/inquiries`
       console.log("Fetching from:", fetchUrl)
       const res = await fetch(fetchUrl, {
         method: "POST",
